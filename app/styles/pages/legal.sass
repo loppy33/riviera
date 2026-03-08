@@ -1,0 +1,330 @@
+.page-legal
+  width: 100%
+
+// --- HERO СЕКЦИЯ ---
+.legal-hero
+  background-color: var(--bg-main)
+  padding: 5rem 1.5rem 6rem
+  text-align: center
+
+  &__inner
+    max-width: 64rem
+    margin: 0 auto
+
+  &__badge
+    color: var(--c-primary)
+    font-size: 0.75rem
+    font-weight: 700
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    margin-bottom: 1.5rem
+    display: block
+
+  &__title
+    font-family: var(--font-serif, serif)
+    font-size: clamp(2.25rem, 5vw, 4.5rem)
+    color: var(--c-text-main)
+    line-height: 1.1
+    margin-bottom: 2rem
+
+  &__subtitle
+    color: var(--c-text-muted)
+    font-size: clamp(1.125rem, 2vw, 1.25rem)
+    font-weight: 300
+    line-height: 1.6
+    max-width: 42rem
+    margin: 0 auto 2.5rem
+
+  &__actions
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1rem
+    @media (min-width: 640px)
+      flex-direction: row
+
+// --- SERVICES OVERVIEW ---
+.legal-services
+  background-color: var(--bg-main)
+  border-top: 1px solid var(--border-color-input)
+  padding: 6rem 1.5rem
+
+  &__inner
+    max-width: 72rem
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr
+    gap: 5rem
+    align-items: center
+    @media (min-width: 1024px)
+      grid-template-columns: 1fr 1fr
+
+  &__title
+    font-size: 1.875rem
+    font-weight: 700
+    color: var(--c-text-main)
+    margin-bottom: 1.5rem
+
+  &__desc
+    color: var(--c-text-muted)
+    line-height: 1.6
+    margin-bottom: 3rem
+
+  &__list
+    display: flex
+    flex-direction: column
+    gap: 3rem
+
+  &__item
+    display: flex
+    gap: 1.5rem
+    
+    .icon-wrapper
+      flex-shrink: 0
+      width: 3rem
+      height: 3rem
+      border-radius: 50%
+      border: 1px solid rgba(23, 54, 207, 0.2) // primary/20
+      display: flex
+      align-items: center
+      justify-content: center
+      color: var(--c-primary)
+
+    h3
+      font-size: 1.25rem
+      font-weight: 700
+      color: var(--c-text-main)
+      margin-bottom: 0.5rem
+
+    p
+      color: var(--c-text-muted)
+      line-height: 1.6
+
+  &__image
+    position: relative
+    height: 500px
+    border-radius: 1rem
+    overflow: hidden
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
+    
+    .bg-img
+      position: absolute
+      inset: 0
+      background-size: cover
+      background-position: center
+
+// --- STRUCTURED OWNERSHIP (BEIGE BG) ---
+.legal-ownership
+  background-color: var(--bg-accent-beige)
+  padding: 6rem 1.5rem
+
+  &__inner
+    max-width: 72rem
+    margin: 0 auto
+
+  &__header
+    text-align: center
+    margin-bottom: 4rem
+    
+    h2
+      font-size: 1.875rem
+      font-weight: 700
+      color: var(--c-text-main)
+      margin-bottom: 1rem
+      
+    p
+      color: var(--c-text-muted)
+
+  &__grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: 2rem
+    @media (min-width: 768px)
+      grid-template-columns: repeat(3, 1fr)
+
+  &__card
+    background-color: #ffffff
+    padding: 2.5rem
+    border-radius: 0.75rem
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)
+    transition: box-shadow 0.3s ease
+    
+    &:hover
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+
+    .icon
+      color: var(--c-primary)
+      font-size: 2.5rem
+      margin-bottom: 1.5rem
+
+    h3
+      font-size: 1.25rem
+      font-weight: 700
+      color: var(--c-text-main)
+      margin-bottom: 1rem
+
+    p
+      color: var(--c-text-muted)
+      font-size: 0.875rem
+      line-height: 1.6
+
+// --- THE ACQUISITION JOURNEY (TIMELINE) ---
+.legal-journey
+  background-color: var(--bg-main)
+  padding: 6rem 1.5rem
+
+  &__inner
+    max-width: 72rem
+    margin: 0 auto
+
+  &__title
+    font-size: 1.875rem
+    font-weight: 700
+    color: var(--c-text-main)
+    text-align: center
+    margin-bottom: 4rem
+
+  &__timeline
+    position: relative
+
+  &__line
+    display: none
+    position: absolute
+    top: 1.25rem // Половина высоты кружка (40px / 2)
+    left: 0
+    width: 100%
+    height: 1px
+    background-color: var(--border-color-input)
+    transform: translateY(-50%)
+    z-index: 1
+    @media (min-width: 768px)
+      display: block
+
+  &__grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: 2rem
+    position: relative
+    z-index: 2
+    @media (min-width: 768px)
+      grid-template-columns: repeat(4, 1fr)
+
+  &__step
+    text-align: center
+    background-color: var(--bg-main) // Чтобы перекрыть линию сзади
+    
+    .number
+      width: 2.5rem
+      height: 2.5rem
+      border-radius: 50%
+      background-color: var(--c-primary)
+      color: #ffffff
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 700
+      margin: 0 auto 1.5rem
+      position: relative
+      z-index: 10
+
+    h4
+      font-weight: 700
+      color: var(--c-text-main)
+      margin-bottom: 0.5rem
+
+    p
+      color: var(--c-text-muted)
+      font-size: 0.75rem
+      text-transform: uppercase
+      letter-spacing: 0.05em
+
+// --- CONSULTATION FORM ---
+.legal-consultation
+  background-color: var(--bg-section-alt)
+  padding: 6rem 1.5rem
+
+  &__inner
+    max-width: 48rem
+    margin: 0 auto
+    background-color: var(--bg-main)
+    padding: 3rem
+    border-radius: 1rem
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)
+    @media (min-width: 1024px)
+      padding: 4rem
+
+  &__header
+    text-align: center
+    margin-bottom: 3rem
+    
+    h2
+      font-size: 1.875rem
+      font-weight: 700
+      color: var(--c-text-main)
+      margin-bottom: 1rem
+      
+    p
+      color: var(--c-text-muted)
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+
+  &__row
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1.5rem
+    @media (min-width: 768px)
+      grid-template-columns: repeat(2, 1fr)
+
+  .form-group
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    
+    label
+      font-size: 0.875rem
+      font-weight: 600
+      color: var(--c-text-main)
+
+    input, select, textarea
+      width: 100%
+      padding: 0.75rem 1rem
+      border-radius: 0.5rem
+      border: 1px solid var(--border-color-input)
+      background-color: rgba(248, 250, 252, 0.5) // slate-50/50
+      color: var(--c-text-main)
+      transition: all 0.3s ease
+      font-family: inherit
+      
+      &:focus
+        outline: none
+        border-color: var(--c-primary)
+        box-shadow: 0 0 0 1px var(--c-primary)
+
+  .submit-btn
+    width: 100%
+    background-color: var(--c-primary)
+    color: #ffffff
+    font-weight: 700
+    padding: 1rem
+    border-radius: 0.5rem
+    border: none
+    cursor: pointer
+    transition: opacity 0.3s ease
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 0.5rem
+    margin-top: 1rem
+
+    &:hover
+      opacity: 0.9
+
+  &__note
+    text-align: center
+    font-size: 0.75rem
+    color: var(--c-text-light)
+    margin-top: 1rem

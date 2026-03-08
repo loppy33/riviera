@@ -1,0 +1,39 @@
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  border-radius: 0.5rem
+  font-size: 0.875rem
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  transition: all 0.3s ease
+  cursor: pointer
+  border: none
+  padding: 0 2rem
+  height: 3.5rem // 56px (h-14)
+  min-width: 200px
+
+  &--white
+    background-color: #ffffff
+    color: var(--c-text-main)
+    &:hover
+      background-color: #f1f5f9 // slate-100
+
+  &--outline
+    background-color: transparent
+    border: 1px solid #ffffff
+    color: #ffffff
+    &:hover
+      background-color: rgba(255, 255, 255, 0.1)
+
+  &--primary
+    background-color: var(--c-primary)
+    color: #ffffff
+    width: 100%
+    margin-top: 1rem
+    &:hover
+      opacity: 0.9
+
+.dark .btn--primary
+  background-color: var(--c-primary)

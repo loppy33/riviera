@@ -1,0 +1,29 @@
+.form-group
+  display: flex
+  flex-direction: column
+  gap: 0.5rem
+
+  label
+    font-size: 0.75rem
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    color: var(--c-text-light)
+    
+  input, select, textarea
+      border-width: 0 0 1px 0
+      border-style: solid
+      border-color: var(--border-color-input, #e2e8f0) // Добавил фоллбэк цвет на случай, если переменная недоступна
+      background: transparent
+      padding: 0.5rem 0
+      color: var(--c-text-main)
+      transition: border-color 0.3s ease
+      font-family: inherit
+      appearance: none // Убирает дефолтные стили браузера (особенно полезно для select в Safari)
+      border-radius: 0 // Убирает скругления, которые iOS может добавлять инпутам
+
+      &:focus
+        outline: none
+        border-color: var(--c-primary)
+  textarea
+    resize: none

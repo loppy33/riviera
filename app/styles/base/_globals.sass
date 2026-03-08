@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  font-family: var(--font-main), sans-serif
+  line-height: 1.5
+  font-weight: 400
+  
+  // Новые переменные
+  color: var(--c-text-main)
+  background-color: var(--bg-main)
+  color-scheme: dark
+  font-synthesis: none
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+main
+  flex: 1
+
+textarea
+  font-family: var(--font-main)
+
+a
+  text-decoration: none
+  color: var(--c-text-main) // Ссылка белая по умолчанию
+  transition: .3s
+  // &:hover
+  //   color: var(--c-primary) // Синяя при наведении
+
+ul, li
+  list-style: none
+
+.no-scroll
+  overflow: hidden
+
+.container
+  max-width: var(--container-width)
+  margin: 0 auto
+  padding: 0 20px
