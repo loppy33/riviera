@@ -55,7 +55,7 @@ export default async function Collection({
             <h3>{t('noProperties')}</h3>
           </div>
         ) : (
-          properties.map((property) => (
+          properties.map((property: any) => (
             <div className="villa-card" key={property.id}>
               <Link href={`/${locale}/collection/${property.slug}`} className="villa-card__image-box" style={{ display: 'block' }}>
                 <div className="villa-card__skeleton"></div>
