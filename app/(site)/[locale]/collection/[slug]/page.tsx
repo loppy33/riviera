@@ -62,7 +62,7 @@ export default async function PropertyDetails({
           </div>
 
           <div className="property-desc">
-            {property.description.split('\n').map((paragraph, idx) => (
+            {property.description.split('\n').map((paragraph: string, idx: number) => (
               <p key={idx}>{paragraph}</p>
             ))}
           </div>
