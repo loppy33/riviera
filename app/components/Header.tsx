@@ -1,28 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
+import LangSwitcher from './LangSwitcher';
 
 export default function Header() {
+  const t = useTranslations('header');
+  const locale = useLocale();
+
   return (
     <header className="header">
       <div className="header__inner">
-        
+
         {/* Логотип -> на Главную */}
-        <Link href="/" className="header__logo">
+        <Link href={`/${locale}`} className="header__logo">
           <span className="material-symbols-outlined icon">architecture</span>
           <span className="brand-name">Riviera Estates</span>
         </Link>
-        
-        {/* Навигация -> Главная и Каталог */}
+
+        {/* Навигация */}
         <nav className="header__nav">
-          <Link href="/">Home</Link>
-          <Link href="/collection">The Collection</Link>
-          <Link href="/legal">Legal & Tax Advisory</Link>
+          <Link href={`/${locale}`}>{t('home')}</Link>
+          <Link href={`/${locale}/collection`}>{t('collection')}</Link>
+          <Link href={`/${locale}/legal`}>{t('legal')}</Link>
         </nav>
 
-        {/* Кнопка -> на страницу Заявки */}
-        <Link href="/inquiry" className="header__btn">
-          Inquire Now
-        </Link>
+        {/* Правая часть: переключатель языка + кнопка */}
+        <div className="header__actions">
+          <LangSwitcher />
+          <Link href={`/${locale}/inquiry`} className="header__btn">
+            {t('inquire')}
+          </Link>
+        </div>
 
       </div>
     </header>

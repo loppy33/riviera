@@ -24,6 +24,7 @@
     align-items: center
     gap: 0.5rem
     color: var(--c-text-main)
+    text-decoration: none
     
     .icon
       color: var(--c-primary)
@@ -42,6 +43,7 @@
       display: flex
 
     a
+      text-decoration: none
       font-size: 0.875rem
       font-weight: 600
       color: var(--c-text-muted)
@@ -49,7 +51,13 @@
       &:hover
         color: var(--c-primary)
 
+  &__actions
+    display: flex
+    align-items: center
+    gap: 1.5rem
+
   &__btn
+    text-decoration: none
     background-color: var(--c-primary)
     color: #ffffff
     font-size: 0.875rem
@@ -59,3 +67,18 @@
     transition: opacity 0.3s ease
     &:hover
       opacity: 0.9
+
+.lang-switcher
+  select
+    background: transparent
+    border: 1px solid var(--border-color-input)
+    color: var(--c-text-main)
+    padding: 0.4rem 0.6rem
+    border-radius: 0.4rem
+    font-size: 0.75rem
+    font-weight: 600
+    cursor: pointer
+    outline: none
+    
+    &:hover
+      border-color: var(--c-primary)

@@ -1,0 +1,141 @@
+{
+  "header": {
+    "home": "Home",
+    "collection": "The Collection",
+    "legal": "Legal & Tax Advisory",
+    "inquire": "Inquire Now"
+  },
+  "home": {
+    "hero": {
+      "title": "Private Real Estate",
+      "titleSpan": "French Riviera",
+      "subtitle": "Exclusive access to the most prestigious off-market properties on the Côte d'Azur.",
+      "viewCollection": "View Collection",
+      "inquireNow": "Inquire Now"
+    },
+    "collection": {
+      "badge": "The Collection",
+      "title": "Curated Private Collection",
+      "desc": "Our portfolio consists of the most prestigious properties, many of which are exclusively managed by our agency and not listed on the public market. We provide a discreet gateway to the world's most sought-after coastal estates.",
+      "card1Title": "Discrete Acquisitions",
+      "card1Desc": "Access to off-market gems for the most discerning international buyers.",
+      "card2Title": "Tailored Concierge",
+      "card2Desc": "Bespoke services ensuring a seamless transition to your new Mediterranean life."
+    },
+    "featured": {
+      "badge": "Selected Works",
+      "title": "Featured Properties",
+      "exploreAll": "Explore All",
+      "noProperties": "No featured properties at the moment.",
+      "beds": "Beds",
+      "baths": "Baths",
+      "exclusive": "Exclusive",
+      "hot": "Hot Property"
+    },
+    "inquiry": {
+      "title": "Private Inquiry",
+      "desc": "Connect with our specialists for a private consultation or to receive details on our off-market portfolio.",
+      "location": "La Croisette, Cannes"
+    }
+  },
+  "legal": {
+    "hero": {
+      "badge": "Boutique Advisory",
+      "title": "Legal & Tax Advisory for Property Acquisition in France",
+      "subtitle": "Expert guidance for high-net-worth individuals acquiring premium real estate on the French Riviera, ensuring security and fiscal efficiency.",
+      "consultBtn": "Consult Our Experts",
+      "guideBtn": "View Guide"
+    },
+    "services": {
+      "title": "Services Overview",
+      "desc": "We provide a comprehensive legal and fiscal framework tailored to international investors, managing every nuance of the French property law system.",
+      "item1Title": "Legal Due Diligence",
+      "item1Desc": "A rigorous audit of property titles, urban planning certificates, and environmental assessments to guarantee your peace of mind.",
+      "item2Title": "SCI Formation",
+      "item2Desc": "Strategic establishment of 'Société Civile Immobilière' entities to optimize ownership structures for management and inheritance."
+    },
+    "ownership": {
+      "title": "Structured Ownership",
+      "subtitle": "Sophisticated solutions for long-term asset preservation.",
+      "card1Title": "Wealth Tax (IFI)",
+      "card1Desc": "Bespoke debt-structuring strategies to legally minimize exposure to the French Real Estate Wealth Tax.",
+      "card2Title": "Succession Planning",
+      "card2Desc": "Protecting your legacy through cross-border inheritance optimization and gift planning mechanisms.",
+      "card3Title": "Asset Protection",
+      "card3Desc": "Isolating property assets from personal liability through secure legal frameworks and specialized holdings."
+    },
+    "journey": {
+      "title": "The Acquisition Journey",
+      "step1Title": "Structure Design",
+      "step1Sub": "Initial Consult",
+      "step2Title": "Due Diligence",
+      "step2Sub": "Legal Verification",
+      "step3Title": "Notary Liaison",
+      "step3Sub": "Signing Support",
+      "step4Title": "Final Closing",
+      "step4Sub": "Post-Sale Tax Set-up"
+    },
+    "form": {
+      "title": "Request a Confidential Consultation",
+      "subtitle": "Our senior partners are available for a private briefing on your acquisition project.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "interest": "Property Interest",
+      "interestDefault": "Select an option",
+      "opt1": "Luxury Villa - Saint-Tropez",
+      "opt2": "Penthouse - Cannes",
+      "opt3": "Estate - Mougins",
+      "opt4": "Other",
+      "message": "Message / Requirements",
+      "messagePlaceholder": "How can our legal team assist you?",
+      "submit": "Submit Enquiry",
+      "sending": "Sending...",
+      "gdpr": "All inquiries are handled with the strictest confidentiality in accordance with GDPR.",
+      "successTitle": "Request Received"
+    }
+  },
+  "collection": {
+    "title": "The French Riviera Collection",
+    "desc": "If you haven't found your perfect property in our public collection, please contact us. Many of our most exclusive estates are strictly off-market.",
+    "sortBy": "Sort By",
+    "noProperties": "No properties found on this page.",
+    "viewDetails": "View Details",
+    "exclusive": "Exclusive",
+    "hot": "Hot Property"
+  },
+  "inquiry": {
+    "badge": "Tailored Excellence",
+    "title": "Bespoke Inquiry",
+    "subtitle": "Connect with our architectural specialists to find your sanctuary on the French Riviera.",
+    "emailLabel": "Email Us",
+    "phoneLabel": "Call Us",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Johnathan Doe",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "email": "Email Address",
+    "emailPlaceholder": "j.doe@example.com",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Tell us about your architectural preferences...",
+    "submit": "Send Inquiry",
+    "sending": "Sending...",
+    "note": "Our response time is typically within 24 business hours. Confidentiality is our cornerstone.",
+    "bannerLocation": "Cap d'Antibes",
+    "bannerSub": "View our exclusive off-market portfolio"
+  },
+  "property": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCollection": "The Collection",
+    "locationLabel": "Location",
+    "keyFeatures": "Key Features",
+    "livingArea": "Living Area",
+    "landSize": "Land Size",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "suites": "Suites",
+    "requestInfo": "Request Information",
+    "requestDesc": "Contact our specialist for a private viewing or more details."
+  }
+}

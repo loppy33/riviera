@@ -1,0 +1,141 @@
+{
+  "header": {
+    "home": "Accueil",
+    "collection": "La Collection",
+    "legal": "Conseil Juridique & Fiscal",
+    "inquire": "Nous Contacter"
+  },
+  "home": {
+    "hero": {
+      "title": "Immobilier Privé",
+      "titleSpan": "Côte d'Azur",
+      "subtitle": "Accès exclusif aux propriétés off-market les plus prestigieuses de la Côte d'Azur.",
+      "viewCollection": "Voir la Collection",
+      "inquireNow": "Nous Contacter"
+    },
+    "collection": {
+      "badge": "La Collection",
+      "title": "Collection Privée Sélectionnée",
+      "desc": "Notre portefeuille comprend les propriétés les plus prestigieuses, dont beaucoup sont gérées exclusivement par notre agence et ne sont pas listées sur le marché public. Nous offrons un accès discret aux domaines côtiers les plus recherchés au monde.",
+      "card1Title": "Acquisitions Discrètes",
+      "card1Desc": "Accès à des joyaux off-market pour les acheteurs internationaux les plus exigeants.",
+      "card2Title": "Conciergerie Sur Mesure",
+      "card2Desc": "Des services personnalisés pour une transition harmonieuse vers votre nouvelle vie méditerranéenne."
+    },
+    "featured": {
+      "badge": "Sélection",
+      "title": "Propriétés en Vedette",
+      "exploreAll": "Tout Explorer",
+      "noProperties": "Aucune propriété en vedette pour le moment.",
+      "beds": "Chambres",
+      "baths": "Salles de bain",
+      "exclusive": "Exclusif",
+      "hot": "Propriété Phare"
+    },
+    "inquiry": {
+      "title": "Demande Privée",
+      "desc": "Contactez nos spécialistes pour une consultation privée ou pour recevoir des informations sur notre portefeuille off-market.",
+      "location": "La Croisette, Cannes"
+    }
+  },
+  "legal": {
+    "hero": {
+      "badge": "Conseil Boutique",
+      "title": "Conseil Juridique & Fiscal pour l'Acquisition Immobilière en France",
+      "subtitle": "Accompagnement expert pour les particuliers fortunés acquérant de l'immobilier de prestige sur la French Riviera, garantissant sécurité et efficacité fiscale.",
+      "consultBtn": "Consulter Nos Experts",
+      "guideBtn": "Voir le Guide"
+    },
+    "services": {
+      "title": "Aperçu des Services",
+      "desc": "Nous fournissons un cadre juridique et fiscal complet adapté aux investisseurs internationaux, gérant chaque nuance du droit immobilier français.",
+      "item1Title": "Due Diligence Juridique",
+      "item1Desc": "Un audit rigoureux des titres de propriété, des certificats d'urbanisme et des évaluations environnementales pour garantir votre tranquillité d'esprit.",
+      "item2Title": "Création de SCI",
+      "item2Desc": "Création stratégique de Sociétés Civiles Immobilières pour optimiser les structures de propriété en matière de gestion et de succession."
+    },
+    "ownership": {
+      "title": "Détention Structurée",
+      "subtitle": "Des solutions sophistiquées pour la préservation patrimoniale à long terme.",
+      "card1Title": "Impôt sur la Fortune (IFI)",
+      "card1Desc": "Des stratégies sur mesure d'endettement pour minimiser légalement l'exposition à l'Impôt sur la Fortune Immobilière.",
+      "card2Title": "Planification Successorale",
+      "card2Desc": "Protéger votre patrimoine grâce à l'optimisation des successions transfrontalières et aux mécanismes de planification des donations.",
+      "card3Title": "Protection des Actifs",
+      "card3Desc": "Isoler les actifs immobiliers de la responsabilité personnelle grâce à des cadres juridiques sécurisés et des holdings spécialisées."
+    },
+    "journey": {
+      "title": "Le Parcours d'Acquisition",
+      "step1Title": "Conception de la Structure",
+      "step1Sub": "Consultation Initiale",
+      "step2Title": "Due Diligence",
+      "step2Sub": "Vérification Juridique",
+      "step3Title": "Liaison Notariale",
+      "step3Sub": "Accompagnement à la Signature",
+      "step4Title": "Closing Final",
+      "step4Sub": "Mise en Place Fiscale Post-Vente"
+    },
+    "form": {
+      "title": "Demander une Consultation Confidentielle",
+      "subtitle": "Nos associés seniors sont disponibles pour un briefing privé sur votre projet d'acquisition.",
+      "fullName": "Nom Complet",
+      "fullNamePlaceholder": "Jean Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "jean@exemple.com",
+      "interest": "Propriété d'Intérêt",
+      "interestDefault": "Sélectionner une option",
+      "opt1": "Villa de Luxe - Saint-Tropez",
+      "opt2": "Penthouse - Cannes",
+      "opt3": "Domaine - Mougins",
+      "opt4": "Autre",
+      "message": "Message / Exigences",
+      "messagePlaceholder": "Comment notre équipe juridique peut-elle vous aider ?",
+      "submit": "Soumettre la Demande",
+      "sending": "Envoi en cours...",
+      "gdpr": "Toutes les demandes sont traitées avec la plus stricte confidentialité conformément au RGPD.",
+      "successTitle": "Demande Reçue"
+    }
+  },
+  "collection": {
+    "title": "La Collection French Riviera",
+    "desc": "Si vous n'avez pas trouvé la propriété idéale dans notre collection publique, contactez-nous. Beaucoup de nos propriétés les plus exclusives sont strictement off-market.",
+    "sortBy": "Trier Par",
+    "noProperties": "Aucune propriété trouvée sur cette page.",
+    "viewDetails": "Voir les Détails",
+    "exclusive": "Exclusif",
+    "hot": "Propriété Phare"
+  },
+  "inquiry": {
+    "badge": "Excellence Sur Mesure",
+    "title": "Demande Personnalisée",
+    "subtitle": "Contactez nos spécialistes pour trouver votre sanctuaire sur la French Riviera.",
+    "emailLabel": "Nous Écrire",
+    "phoneLabel": "Nous Appeler",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "+33 6 00 00 00 00",
+    "email": "Adresse Email",
+    "emailPlaceholder": "j.dupont@exemple.com",
+    "messageLabel": "Votre Message",
+    "messagePlaceholder": "Parlez-nous de vos préférences architecturales...",
+    "submit": "Envoyer la Demande",
+    "sending": "Envoi en cours...",
+    "note": "Notre délai de réponse est généralement de 24 heures ouvrées. La confidentialité est notre pierre angulaire.",
+    "bannerLocation": "Cap d'Antibes",
+    "bannerSub": "Découvrez notre portfolio off-market exclusif"
+  },
+  "property": {
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCollection": "La Collection",
+    "locationLabel": "Localisation",
+    "keyFeatures": "Caractéristiques Clés",
+    "livingArea": "Surface Habitable",
+    "landSize": "Surface Terrain",
+    "bedrooms": "Chambres",
+    "bathrooms": "Salles de Bain",
+    "suites": "Suites",
+    "requestInfo": "Demande d'Information",
+    "requestDesc": "Contactez notre spécialiste pour une visite privée ou plus de détails."
+  }
+}

@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// По умолчанию ставим PostgreSQL (можешь поменять на sqlite для быстрого старта)
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// --- ПОЛЬЗОВАТЕЛИ (АДМИНЫ) ---
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // Хэшированный пароль
+  name      String?
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  SUPERADMIN
+}
+
+// --- ОБЪЕКТЫ НЕДВИЖИМОСТИ (ВИЛЛЫ) ---
+model Property {
+  id          String   @id @default(cuid())
+  title       String   // Например: "Villa Serenity"
+  slug        String   @unique // Для красивых ссылок: "/collection/villa-serenity"
+  location    String   // Например: "Saint-Jean-Cap-Ferrat"
+  price       Float    // Цена
+  status      String   @default("Available") // Available, Sold, Under Offer
+  
+  // Характеристики
+  bedrooms    Int
+  bathrooms   Int
+  livingArea  Int      // m2
+  landArea    Int?     // m2
+  
+  description String   @db.Text
+  
+  // Массив ссылок на картинки
+  images      String[] 
+  
+  // Бейджи
+  isExclusive Boolean  @default(false)
+  isHot       Boolean  @default(false)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// --- ЗАЯВКИ С САЙТА (ЛИДЫ) ---
+model Inquiry {
+  id        String   @id @default(cuid())
+  fullName  String
+  email     String
+  phone     String?
+  interest  String?  // С какой страницы или что выбрал в селекте
+  message   String   @db.Text
+  
+  // Для админки: чтобы понимать, обработана заявка или нет
+  status    InquiryStatus @default(NEW)
+  
+  createdAt DateTime @default(now())
+}
+
+enum InquiryStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
