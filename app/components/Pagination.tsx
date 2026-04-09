@@ -34,7 +34,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
       </button>
 
       {/* Генерация номеров страниц */}
-      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page: any) => (
         <button
           key={page}
           className={`pagination__btn pagination__btn--number ${currentPage === page ? 'pagination__btn--active' : ''}`}

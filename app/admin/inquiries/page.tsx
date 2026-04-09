@@ -45,7 +45,7 @@ export default async function InquiriesPage() {
                                 </td>
                             </tr>
                         ) : (
-                            inquiries.map((inquiry) => (
+                            inquiries.map((inquiry: any) => (
                                 <tr key={inquiry.id}>
 
                                     <td>

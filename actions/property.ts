@@ -17,7 +17,7 @@ export async function createProperty(formData: FormData) {
     
     // Получаем строку с URL картинок (разделенных запятыми) и делаем из нее массив
     const imagesString = formData.get("images") as string;
-    const images = imagesString.split(",").map((url) => url.trim()).filter(Boolean);
+    const images = imagesString.split(",").map((url: any) => url.trim()).filter(Boolean);
 
     // Чекбоксы
     const isExclusive = formData.get("isExclusive") === "on";
@@ -79,7 +79,7 @@ export async function updateProperty(id: string, formData: FormData) {
     const description = formData.get("description") as string;
 
     const imagesString = formData.get("images") as string;
-    const images = imagesString.split(",").map((url) => url.trim()).filter(Boolean);
+    const images = imagesString.split(",").map((url: any) => url.trim()).filter(Boolean);
 
     const isExclusive = formData.get("isExclusive") === "on";
     const isHot = formData.get("isHot") === "on";

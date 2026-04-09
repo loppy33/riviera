@@ -58,7 +58,7 @@ export default function PropertyGallery({ images }: { images: string[] }) {
     <>
       <section className="property-gallery">
         <div className="property-gallery__grid">
-          {galleryImages.slice(0, 3).map((img, index) => {
+          {galleryImages.slice(0, 3).map((img: any, index: any) => {
             const isLarge = index === 0;
             const isLastVisible = index === 2;
             const hasMoreImages = galleryImages.length > 3;

@@ -43,7 +43,7 @@ export default async function PropertiesPage() {
                                 </td>
                             </tr>
                         ) : (
-                            properties.map((property) => (
+                            properties.map((property: any) => (
                                 <tr key={property.id}>
 
                                     {/* Миниатюра первого фото */}

@@ -91,7 +91,7 @@ export default async function Home() {
             {featuredProperties.length === 0 ? (
               <p style={{ gridColumn: '1/-1', color: 'var(--c-text-muted)' }}>{t('featured.noProperties')}</p>
             ) : (
-              featuredProperties.map((property) => (
+              featuredProperties.map((property: any) => (
                 <article className="property-card" key={property.id}>
                   <Link href={`/${locale}/collection/${property.slug}`} className="property-card__image-box" style={{ display: 'block' }}>
                     <img src={property.images[0] || 'https://via.placeholder.com/800x600'} alt={property.title} />
