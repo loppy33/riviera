@@ -32,15 +32,17 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
 };
+import { notFound } from 'next/navigation';
 
-
-
+const locales = ['en', 'fr', 'ru']; // твои языки
 export default async function RootLayout(props: {
   children: React.ReactNode;
   params: { locale: string } | Promise<{ locale: string }>;
 }) {
   const { locale } = await props.params; // <- await обязателен
-
+  if (!['en', 'fr', 'ru'].includes(locale)) {
+    notFound();
+  }
   return (
     <html lang={locale} className="scroll-smooth">
       <head>

@@ -17,7 +17,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <span className="material-symbols-outlined icon">dashboard</span>
             Dashboard
           </Link>
-          <Link href="/admin/inquiries" className="active">
+          <Link href="/admin/inquiries">
             <span className="material-symbols-outlined icon">mail</span>
             Inquiries
           </Link>
